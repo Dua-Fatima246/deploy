@@ -1,0 +1,83 @@
+:root{
+  --glass: rgba(255,255,255,0.08);
+  --card: rgba(255,255,255,0.12);
+  --accent: rgba(255,255,255,0.9);
+  --muted: rgba(255,255,255,0.75);
+}
+
+/* global gradient background */
+.global-bg {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: white;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* Container card style used on pages */
+.page-card {
+  width: 100%;
+  max-width: 1000px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+/* header */
+.header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin-bottom:18px;
+}
+.h-title { font-size:1.8rem; letter-spacing:0.6px; }
+.h-sub { color: rgba(255,255,255,0.8); font-size:0.95rem; }
+
+/* input */
+.input {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.02);
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* buttons */
+.btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  color: white;
+}
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* leaderboard list */
+.leaderboard-list { list-style:none; padding:0; margin:0; }
+.leaderboard-item {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:12px; border-radius:10px; margin-bottom:8px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+
+/* small text */
+.small { font-size: 0.9rem; color: rgba(255,255,255,0.85); }
+.center { text-align:center; }

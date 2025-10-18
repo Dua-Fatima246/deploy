@@ -1,0 +1,13 @@
+{
+  "name": "deploy",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm:server\" \"npm:client\"",
+    "server": "node backend/index.js",
+    "client": "npm run dev --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
