@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ✅ Connect to MongoDB (using your connection string)
+// ✅ Connect to MongoDB
 mongoose
   .connect("mongodb+srv://sitara:Pakistan@cluster0.bunqn28.mongodb.net/deploy?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => console.log("✅ MongoDB connected successfully"))
