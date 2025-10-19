@@ -55,9 +55,9 @@ export default function Leaderboard() {
                 padding: "10px 15px",
               }}
             >
-              {/* ✅ Changed s.playerName → s.name */}
+              {/* ✅ FIXED: now uses s.playerName to match backend */}
               <span>
-                {i + 1}. {s.name}
+                {i + 1}. {s.playerName}
               </span>
               <span>
                 Score: {s.score} | Level: {s.level}
